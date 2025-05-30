@@ -4,7 +4,7 @@ from pauli_lcu_omp.decomposition import pauli_coefficients
 import os
 import time
 
-dim = np.power(2,14)# num_qubits = 15
+dim = np.power(2,14)# num_qubits = 14
 # Set the number of threads for OpenMP
 num_threads = 8
 os.environ["OMP_NUM_THREADS"] = str(num_threads)
