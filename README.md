@@ -19,11 +19,11 @@ This package leverages OpenMP to parallelize the core computations, potentially 
 To install Python bindings from source:
 
     $ git clone git@github.com:bobschreiner/pauli_lcu_omp.git
+    $ cd pauli_lcu_omp
     $ python3 -m venv venv
     $ source venv/bin/activate
-    $ cd pauli_lcu_omp
     $ pip install -r requirements.txt
-    $ pip install .
+    $ pip install -e .
 
 Note that when trying to install this version of pauli_lcu a compiler that supports OpenMP needs to be provided in setup.py. 
 
