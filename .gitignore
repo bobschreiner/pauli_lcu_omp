@@ -15,3 +15,7 @@ settings.json
 
 #Virtual environment
 venv/
+
+#Build directories
+build/
+
