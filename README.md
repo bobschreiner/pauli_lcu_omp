@@ -9,7 +9,7 @@ Pauli LCU OMP is an OpenMP-accelerated extension of the `pauli_lcu` package for 
 where
 
 ```math
-    \alpha_{r,s}\coloneqq \frac{i^{-|r\wedge s|}}{2^n} \sum_{q=0}^{2^n-1}a_{q\oplus r,q}(H^{\otimes n})_{q,s}, \qquad P(r_j, s_j) = i^{r_j\wedge s_j} X^{r_j} Z^{s_j} \in \{I, X, Y, Z\},
+    \alpha_{r,s} := \frac{i^{-|r\wedge s|}}{2^n} \sum_{q=0}^{2^n-1}a_{q\oplus r,q}(H^{\otimes n})_{q,s}, \qquad P(r_j, s_j) = i^{r_j\wedge s_j} X^{r_j} Z^{s_j} \in \{I, X, Y, Z\},
 ```
 
 and $r_j, s_j$ are the binary expansion coefficients of $r$ and $s$.
