@@ -19,9 +19,14 @@ This package leverages OpenMP to parallelize the core computations, potentially 
 To install Python bindings from source:
 
     $ git clone git@github.com:bobschreiner/pauli_lcu_omp.git
+    $ python3 -m venv venv
+    $ source venv/bin/activate
     $ cd pauli_lcu_omp
     $ pip install -r requirements.txt
     $ pip install .
+
+Note that when trying to install this version of pauli_lcu a compiler that supports OpenMP needs to be provided in setup.py. 
+
 
 For use in C, `pauli_decomposition_omp.h` can be used as a stand-alone library. 
 Windows is not currently supported. In this case, we recommend to use WSL or Linux VM.
