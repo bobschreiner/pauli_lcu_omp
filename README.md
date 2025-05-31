@@ -18,7 +18,7 @@ This package leverages OpenMP to parallelize the core computations, potentially 
 ## Installation
 To install Python bindings from source:
 
-    $ git clone <repository_url_for_pauli_lcu_omp> 
+    $ git clone git@github.com:bobschreiner/pauli_lcu_omp.git
     $ cd pauli_lcu_omp
     $ pip install -r requirements.txt
     $ pip install .
@@ -30,8 +30,10 @@ Windows is not currently supported. In this case, we recommend to use WSL or Lin
 
 Compute Pauli coefficients of a matrix:
 ```pycon
+>>> import os
 >>> import numpy as np
 >>> from pauli_lcu_omp import pauli_coefficients
+>>> os.environ["OMP_NUM_THREADS"] = '8'
 >>> num_qubits = 1
 >>> dim = 2 ** num_qubits
 >>> matrix = np.arange(dim*dim).reshape(dim, dim).astype(complex)  # generate your matrix

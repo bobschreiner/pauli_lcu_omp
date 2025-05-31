@@ -10,11 +10,10 @@ name = "pauli_lcu_omp"
 version = "1.0.1"
 authors = [
   { name="Aleksei Ivanov", email="aleksei.ivanov@riverlane.com" },
-  { name="Christoph Sunderhauf", email="christoph.sunderhauf@riverlane.com" }
+  { name="Christoph Sunderhauf", email="christoph.sunderhauf@riverlane.com" },
+  { name="Bob Schreiner", email="bobschreiner@outlook.com" }
 ]
 
-editor = [
-  { name="Bob Schreiner", email=bobschreiner@outlook.com"}
 
 description = "Decomposition of a matrix into Pauli strings"
 readme = "README.md"
